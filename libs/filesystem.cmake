@@ -9,6 +9,8 @@ _add_boost_lib(
     ${BOOST_SOURCE}/libs/filesystem/src/unique_path.cpp
     ${BOOST_SOURCE}/libs/filesystem/src/utf8_codecvt_facet.cpp
     ${BOOST_SOURCE}/libs/filesystem/src/windows_file_codecvt.cpp
+    ${BOOST_SOURCE}/libs/filesystem/src/exception.cpp
+    ${BOOST_SOURCE}/libs/filesystem/src/directory.cpp
   DEFINE_PRIVATE
     BOOST_FILESYSTEM_STATIC_LINK=1
 )
@@ -26,6 +28,7 @@ _add_boost_test(
     RUN ${BOOST_SOURCE}/libs/filesystem/test/fstream_test.cpp
     RUN ${BOOST_SOURCE}/libs/filesystem/test/large_file_support_test.cpp
     RUN ${BOOST_SOURCE}/libs/filesystem/test/locale_info.cpp
+    RUN ${BOOST_SOURCE}/libs/filesystem/test/copy_test.cpp
     #RUN ${BOOST_SOURCE}/libs/filesystem/test/operations_test.cpp
     RUN ${BOOST_SOURCE}/libs/filesystem/test/path_test.cpp
     RUN ${BOOST_SOURCE}/libs/filesystem/test/path_unit_test.cpp
