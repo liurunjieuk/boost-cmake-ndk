@@ -1,14 +1,12 @@
-# Boost CMake [![Build Status](https://dev.azure.com/Orphis/boost-cmake/_apis/build/status/Orphis.boost-cmake?branchName=master)](https://dev.azure.com/Orphis/boost-cmake/_build/latest?definitionId=1?branchName=master)
-
 ## Synopsis
 
-Easy Boost integration in CMake projects!
+Easy Boost integration in CMake projects With NDK! My NDK version is r24
 
 ## Code Example
 
 Install the submodule in your project structure:
 ```
-git submodule add https://github.com/Orphis/boost-cmake.git
+git submodule add https://github.com/liurunjieuk/boost-cmake-ndk.git
 ```
 Use it! In your CMakeLists.txt file:
 
@@ -20,8 +18,7 @@ target_link_libraries(lib_using_header_only PUBLIC Boost::boost)
 ```
 
 ## Configuration
-
-Boost will automatically be downloaded from GitHub as a minified archive created with the `repack.sh` script.
+Current boost version is 1.75.0
 
 If that is not acceptable to you, you can use an alternate Boost version, apply custom patches or just mirror the current archive in your internal network like so:
 ```
